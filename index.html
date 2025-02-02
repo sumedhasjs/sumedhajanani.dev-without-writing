@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumedha's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6ed36260fa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Black_and_White_Minimalist_Professional_Initial_Logo-removebg-preview.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Sumedha Janani Siriyapuraju</p>
+            <h1>Electronics and Communication Engineer<br><span>| Analyst - Deloitte |</span><br>AI/ML in Healthcare Entusiast <br><span>| Veena Artist |</span><br>Published Author</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/my-passport-photo.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Sumedha Janani Siriyapuraju is an Analyst at Deloitte, specializing in Oracle BI Publisher and Oracle Integration Cloud. As a published author and researcher, she has explored many topics, but aims to make an impact in the healthcare industry. Her journey combines technical expertise with creative pursuits, including playing the veena for All India Radio and contributing to cultural preservation. She is committed to lifelong learning and aspire to drive innovation at the intersection of technology and impact.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Python, SQL, MATLAB, C/C++, Octave</li>
+                        <li><span>Web Development</span><br>HTML, CSS, XML, JavaScript</li>
+                        <li><span>Machine Learning Frameworks</span><br>TensorFlow, Keras, Scikit-learn, Scipy</li>
+                        <li><span>Natural Language Processing</span><br>NLTK, SpaCy</li>
+                        <li><span>Cloud Technologies</span><br>Oracle Integration Cloud, Oracle Cloud SQL, BI Publisher</li>
+                        <li><span>Tools</span><br>Linux, Postman, SoapUI, SQL Developer, Bitbucket, Overleaf (LaTeX)</li>
+                        <li><span>Other Softwares</span><br>Adobe Photoshop, Illustrator, Simulink, NI Multisim</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Oct 2023 - Current</span><br>Analyst at Deloitte, Bangalore</li>
+                        <li><span>Jun 2021 - Aug 2021</span><br>Research Intern at TCS R&D, Pune</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Jul 2019 - May 2023</span><br>B.Tech in Electronics and Communication Dept from VNIT, Nagpur</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------services---------------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Building Mental Health Resources Chatbot</h2>
+                <p>Developed a simple chatbot that acts as a Mental Health Helpline. It is fed a corpus of mental health resources. Using Natural Language Processing, tokenization, removal of noise and stop words, stemming, and lemmatization was done. Using the TF-IDF vectorizer and cosine similarity, the appropriate responses were generated.</p>
+                <a href="https://github.com/sumedhasjs">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Image Caption Developer</h2>
+                <p>Designed an Image Caption Generator that combines computer vision and natural language processing techniques analyses the context of an image and describes it. It was trained on the Flickr 30k dataset in which each image has about five captions pertinent to it. For detecting the image, the VGG16 model is used. Using LSTM and Bleu scores, the text generation is done.</p>
+                <a href="https://github.com/sumedhasjs">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-arrow-trend-down"></i>
+                <h2>Heart Failure Prediction</h2>
+                <p>Developed a heart failure prediction model using the parameters age, sex, chest pain type, resting blood pressure, serum cholesterol, fasting blood sugar, resting electrocardiographic results, maximum heart rate achieved, exercise-induced angina, old peak = ST depression induced by exercise relative to rest, the slope of the peak exercise ST segment, number of major vessels (0-3) colored by fluoroscopy and thal.</p>
+                <a href="https://github.com/sumedhasjs">Learn more</a>
+            </div>
+        </div>
+        <a href="https://github.com/sumedhasjs" class="btn">See more</a>
+    </div>
+</div>
+
+
+
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> sumedhasjs@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +91 9502620512</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sumedha-janani-siriyapuraju-87a4b81aa/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/sumedhasjs"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.youtube.com/@sumedhajananisiriyapuraju9799"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://sumedhasjs.medium.com/"><i class="fa-brands fa-medium"></i></a>
+                    <a href="https://t.me/sumedhasjs"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.instagram.com/sumedha.js/profilecard/?igsh=MXAyeHYwcGJveWVjMw%3D%3D"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/sumedha_j_s?t=veC62pOtrOdLfr9jHgtHwg&s=08"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://www.facebook.com/share/1AmnVYwgRb/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.snapchat.com/add/sumedhasjs?share_id=SIY-LLzhvrs&locale=en-IN"><i class="fa-brands fa-snapchat"></i></a>
+                    
+                    
+                </div>
+                <a href="images/Resume-Sumedha.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzPF2TeZRK5HjZZUzfyZ4FyDM7QBhHI0iarNEsunyivkTpF9F9_41uxwVThheZX0i0/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
